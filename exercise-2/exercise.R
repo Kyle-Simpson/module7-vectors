@@ -15,12 +15,10 @@ z <- x + y
 first.three <- z[1:3]
 
 # Create a vector `small` that has the values of `z` that are less than 5
-small.check <- z < 5
-small <- z[small.check]
+small <- z[z < 5]
 
 # Create a vector `large` that has the values of `z` that are greater than or equal to 5
-large.check <- z >= 5
-large <- z[large.check]
+large <- z[z >= 5]
 
 ### Bonus ###
 
