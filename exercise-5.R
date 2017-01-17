@@ -12,10 +12,10 @@ words.of.the.day <- paste(words, "is the word of the day")
 # Create a vector `a.f.words` which are the elements in `words` that start with "a" through "f"
 # Hint: use a comparison operator to see if the word comes before "f" alphabetically!
 # Tip: make sure all the words are lower-case, and only consider the first letter of the word!
-a.f.words <- words[words <= 'f']
+a.f.words <- words[substr(words, 1, 1) <= 'f']
 
 # Create a vector `g.m.words` which are the elements in `words` that start with "g" through "m"
-g.m.words <- words[words >= 'g' && words <= 'm']
+g.m.words <- words[words >= 'g' & words <= 'm']
 
 # Define a function `WordBin` that takes in three arguments: a vector of words, and two letters. The function
 # should return a vector of words that go between those letters alphabetically.
